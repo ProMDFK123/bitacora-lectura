@@ -1,0 +1,130 @@
+# ==========================================
+# Bitácora - Monorepo
+# ==========================================
+
+# ------------------------------------------
+# Sistema operativo / Editor
+# ------------------------------------------
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains
+.idea/
+
+# ------------------------------------------
+# Variables de entorno
+# ------------------------------------------
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Permitir ejemplos de variables de entorno
+!.env.example
+!.env.local.example
+
+# ------------------------------------------
+# BACKEND - .NET / ASP.NET Core
+# ------------------------------------------
+
+# Build
+bin/
+obj/
+
+# Test results
+TestResults/
+*.trx
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# ASP.NET Core
+wwwroot/
+
+# User-specific files
+*.rsuser
+
+# Publish
+publish/
+*.publishsettings
+
+# Logs
+*.log
+
+# ------------------------------------------
+# FRONTEND - Next.js / Node
+# ------------------------------------------
+
+frontend/**/node_modules/
+frontend/**/.next/
+frontend/**/out/
+
+# Next.js build
+frontend/**/.vercel/
+
+# npm
+frontend/**/.npm/
+frontend/**/npm-debug.log*
+frontend/**/yarn-debug.log*
+frontend/**/yarn-error.log*
+frontend/**/pnpm-debug.log*
+
+# Environment
+frontend/**/*.env
+frontend/**/*.env.local
+frontend/**/*.env.development.local
+frontend/**/*.env.test.local
+frontend/**/*.env.production.local
+
+# ------------------------------------------
+# IDE / herramientas
+# ------------------------------------------
+
+*.swp
+*.swo
+
+# ------------------------------------------
+# Docker
+# ------------------------------------------
+
+docker-compose.override.yml
+
+# ------------------------------------------
+# Base de datos / archivos locales
+# ------------------------------------------
+
+*.db
+*.sqlite
+*.sqlite3
+
+# ------------------------------------------
+# Archivos temporales
+# ------------------------------------------
+
+*.tmp
+*.temp
+*.bak
+*~
