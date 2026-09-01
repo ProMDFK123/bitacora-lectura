@@ -74,6 +74,13 @@ publish/
 # Logs
 *.log
 
+# ASP.NET Core configuration
+**/appsettings.json
+**/appsettings.*.json
+
+# Exceptuar configuraciones de ejemplo
+!**/appsettings.example.json
+
 # ------------------------------------------
 # FRONTEND - Next.js / Node
 # ------------------------------------------
