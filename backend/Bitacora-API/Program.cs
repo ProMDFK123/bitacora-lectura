@@ -1,4 +1,7 @@
+using Bitacora_API.Application.Interfaces;
+using Bitacora_API.Application.Services;
 using Bitacora_API.Infrastructure.Persistence;
+using Bitacora_API.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +18,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection")
     )
 );
+
+// Repositories
+builder.Services.AddScoped<IObraRepository, ObraRepository>();
+
+// Services
+builder.Services.AddScoped<IObraService, ObraService>();
 
 var app = builder.Build();
 

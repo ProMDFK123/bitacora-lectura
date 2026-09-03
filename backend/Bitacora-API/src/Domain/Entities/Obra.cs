@@ -11,7 +11,7 @@ namespace Bitacora_API.Domain.Entities
         public string Titulo { get; set; } = null!;
         public string? Descripcion { get; set; }
         public string TipoObra { get; set; } = null!;
-        public DateOnly? Publicacion { get; set; }
+        public DateTime? Publicacion { get; set; }
 
         public Guid? SagaId { get; set; } // Clave foránea que referencia a la 
                                         // saga a la que pertenece la obra (si 
