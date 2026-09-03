@@ -29,6 +29,9 @@ namespace Bitacora_API.Infrastructure.Persistence.Configurations
 
             builder.HasOne(o => o.Saga).WithMany(s => s.Obras).HasForeignKey(o => o.SagaId)
                 .OnDelete(DeleteBehavior.SetNull);
+
+            builder.HasOne(o => o.Usuario).WithMany(u => u.Obras).HasForeignKey(o => o.UsuarioId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
